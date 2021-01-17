@@ -135,7 +135,7 @@ class Configuration {
 
             // deviceUpdateCallbackInterval
             if (params.hasKey("deviceUpdateCallbackInterval") && !params.isNull("deviceUpdateCallbackInterval")) {
-                deviceUpdateCallbackInterval = params.getLong("deviceUpdateCallbackInterval");
+                deviceUpdateCallbackInterval = (long)params.getInt("deviceUpdateCallbackInterval");
             }
 
             proximityManager.configuration()
